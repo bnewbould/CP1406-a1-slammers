@@ -8,7 +8,7 @@ html {
 	  background-position: 0px 0;
   }
   100% {
-	  background-position: -5517px 0;
+	  background-position: -5516px 0;
   }
 }
 
@@ -30,8 +30,8 @@ body {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	border-left: solid black;
-	border-right: solid black;
+	border-left: thin solid #FFF;
+	border-right: thin solid #FFF;
 }
 
 nav {
@@ -70,8 +70,9 @@ nav {
 #callToAction {
 	position: absolute;
 	padding: 40px 5px;
+	text-shadow: -1px 0 #000000,0 1px #000000, 1px 0 #000000,0 -1px #000000;
 	right: 0;
-	background-color:lightgray;
+	background-color:#005080;
 	border-radius:20px;
 	transform: translate(50%, 0%);
 }
