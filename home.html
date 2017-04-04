@@ -4,35 +4,56 @@
 		<meta charset="utf-8">
 		<title>Slammers Beach Volleyball</title>
 		<link href="mainstyle.css" rel="stylesheet" type="text/css">
-		<!--<script src="test.js"></script>-->
+		<script src="mainscript.js"></script>
 	</head>
 	<body>
-		<header>
-			<nav>
-				<button class="navLink">Home</button>
-				<button class="navLink">About Volleyball</button>
-				<button class="navLink">Guidelines</button>
-				<button class="navLink">Competitive League</button>
-				<button class="navLink">Links</button>
-				<hr class="navRule">
-			</nav>
-		</header>
+		<div id="content">
+			<header>
+				<nav>
+					<button class="navLink" onClick="goToHome()">Home</button>
+					<button class="navLink" onClick="goToAbout()">About Volleyball</button>
+					<button class="navLink" onClick="goToGuidelines()">Guidelines</button>
+					<button class="navLink" onClick="goToCompLeague()">Competitive League</button>
+					<button class="navLink" onClick="goToLinks()">Links</button>
+					<hr class="navRule">
+				</nav>
+			</header>
 
-		<div id="main">
-			<!--main body-->
-			Slammers for summerslam
-		</div>
+			<div id="main">
+				<div id="callToAction">
+					<button id="signUp" onClick="goToSignUp()">Sign up today!</button>
+				</div>
+				<!--main body-->
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies faucibus quam vitae dignissim. Ut vitae turpis ut turpis molestie fermentum. Nullam feugiat ut erat non iaculis. Curabitur vel congue mauris. Maecenas auctor a augue non viverra. Sed at lacus eros. Sed ultrices tortor nec mi porta auctor. Pellentesque sollicitudin a metus at mattis. Nulla in hendrerit nulla.</p>
 
-		<footer>
-			<!--Copyright and contact information-->
-			<p>
+				<p>Pellentesque facilisis purus in massa volutpat, nec pellentesque ante ultrices. Fusce blandit commodo luctus. Sed eu luctus erat. Cras tempus metus non leo tincidunt molestie. Aenean commodo nisi sit amet turpis placerat sollicitudin. Proin aliquet elit tristique tortor aliquam gravida. Curabitur quis vulputate orci.</p>
+
+				<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer posuere nisl eu lorem convallis faucibus. Curabitur nec est vel nibh commodo finibus et ac neque. Donec ac eros quam. Etiam vel sem id augue consectetur pharetra. Nunc non ex blandit, fermentum magna nec, condimentum magna. Quisque dignissim neque porta eros consequat porttitor. Nam vulputate imperdiet augue, ullamcorper eleifend ligula accumsan ac. Donec congue at sapien condimentum pharetra. Ut eleifend vel nunc ac consequat. Proin ac euismod nibh, in tempus nisl.</p>
+
+				<p>Donec vel leo sed risus blandit lacinia. Vestibulum interdum, elit et gravida hendrerit, enim quam hendrerit metus, porta elementum urna nunc a eros. Morbi semper sollicitudin dui eu egestas. Ut ac fermentum orci. Proin quis tortor ac libero laoreet vehicula. Nullam ipsum est, condimentum congue congue vel, lacinia a magna. Cras tincidunt varius odio, in malesuada neque accumsan ac. Nullam tempor feugiat felis at dignissim. Aenean in lacus at leo consequat molestie. Phasellus sodales, risus id ullamcorper cursus, urna ante scelerisque massa, in pretium ipsum nisi a ante. Quisque nec sollicitudin tellus, eget consectetur sem. Curabitur vulputate scelerisque lorem, a bibendum dui porta vel. Nulla facilisi.</p>
+
+				<p>Suspendisse non feugiat lorem. Donec consectetur tempor dolor, sit amet consequat erat congue sed. Vestibulum faucibus, augue id volutpat dictum, dui libero tincidunt diam, nec volutpat eros quam at risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ut convallis ex. Proin nisi massa, faucibus quis tortor eu, vestibulum fermentum lacus. Maecenas sed egestas nisi, at pellentesque orci. Sed auctor sed neque et blandit. Integer blandit, ex sit amet dignissim varius, dolor nibh scelerisque libero, non cursus orci ipsum nec orci. Proin ex libero, ultricies et lacus in, blandit iaculis erat. Maecenas interdum feugiat erat, non scelerisque est commodo id. Cras faucibus volutpat ante et dapibus. Nulla quis pellentesque turpis. Duis pellentesque sapien libero, eget venenatis elit sodales in.</p>
+
+				<p>Ut lectus velit, volutpat at iaculis non, pretium eget velit. Quisque volutpat molestie erat et facilisis. Pellentesque rutrum luctus velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed porttitor sit amet est et ultricies. Ut bibendum lectus nunc, sed dignissim odio sodales quis. Morbi vitae elit cursus, malesuada dolor sit amet, facilisis magna. Phasellus at pharetra nibh, et venenatis nibh. Nunc fringilla velit libero, quis vehicula velit ornare sed. Fusce eget arcu malesuada, pharetra augue sit amet, blandit nunc. Integer non enim diam. Phasellus at orci est. Integer quam ipsum, tristique vel nisi nec, venenatis ultricies nibh. Phasellus posuere augue finibus, elementum neque eget, tristique nulla. Aenean id egestas massa. Donec eget egestas lorem.</p>
+
+				<p>Fusce eu erat non neque tincidunt tempus sit amet in eros. Integer lobortis non leo non laoreet. Ut malesuada pretium augue, quis pulvinar diam rutrum at. Mauris nec dictum nulla. Nam quam risus, auctor ut facilisis pharetra, laoreet et ligula. Aliquam nulla urna, ornare ullamcorper tempus nec, ultrices vel arcu. Integer vehicula ultricies pellentesque.</p>
+				
+				<p>In eget urna ac elit consectetur ornare. Nullam ac malesuada orci. Integer dignissim interdum laoreet. In hac habitasse platea dictumst. Aliquam porttitor lectus purus, ut iaculis nunc pulvinar quis. Pellentesque bibendum consequat urna a tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+				<p>Praesent eu enim sed erat aliquet semper. Phasellus ex ipsum, dictum quis justo eu, tincidunt sollicitudin orci. Vivamus vel diam laoreet, fermentum justo et, ultricies odio. Sed non viverra nunc. Nunc elementum, ex aliquet volutpat ultricies, neque nunc facilisis nunc, gravida aliquam arcu ex et leo. Sed mattis, nulla vel condimentum tristique, leo nisl pellentesque libero, sed mattis neque tellus vitae elit. Nullam lacus massa, volutpat egestas viverra eu, ornare feugiat est. Morbi pharetra mauris ac vulputate laoreet. Sed ligula eros, egestas semper pharetra ac, posuere a diam. Pellentesque sit amet blandit sapien. Etiam commodo mollis lorem quis ullamcorper. Suspendisse posuere, mi vitae hendrerit varius, lacus velit luctus tellus, quis placerat velit arcu eget lectus. Nulla fringilla gravida purus, eget sodales leo ullamcorper sit amet. Curabitur vitae mi dui. Nunc pharetra, eros sit amet semper pulvinar, enim velit porttitor est, in mollis turpis erat vitae lacus.</p>
+
+				<p>Nunc semper faucibus justo, accumsan bibendum neque aliquam nec. Maecenas sagittis eget erat eget pretium. Aliquam et risus congue, malesuada ex ac, aliquet lacus. Phasellus eget nunc quis dui vulputate mollis at eu leo. Sed ultricies suscipit est, in pulvinar neque posuere eu. Integer placerat dolor ipsum. Suspendisse congue vestibulum massa. Nullam accumsan iaculis risus non blandit. Maecenas eu viverra purus. Maecenas vel ultricies nibh. Mauris eu vulputate libero. Curabitur nec nibh ac elit lacinia aliquam. Suspendisse potenti. Quisque ligula ligula, varius at finibus nec, fringilla non mi. Proin semper lectus id elementum placerat.</p>
+			</div>
+
+			<footer>
+				<!--Copyright and contact information-->
 				Phone number: 07 4771 2233 |
 				Fax: 4771 2244 |
 				Address: 123 Pokemund Street, Cairnsville, Queensland |
 				Email: slammers@gmail.com
 				<br>
 				<strong>© 2017 Slammers Beach Volleyball</strong>
-			</p>
-		</footer>
+			</footer>
+		</div>
 	</body>
 </html>
