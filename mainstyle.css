@@ -1,11 +1,15 @@
 /* CSS Document */
+html {
+	height: 100%;
+}
+
 body {
-	color: #333333;
-	background-color:#DEDEDE;
+	color: #EEEEEE;
+	background-color: #0077be;
 	margin: 0px 20%;
 	padding: 0px 50px;
-	border-left: #000000 medium inset;
-	border-right: #000000 medium inset;
+	border-left: #FFFFFF medium ridge;
+	border-right: #FFFFFF medium ridge;
 }
 
 nav {
@@ -14,17 +18,32 @@ nav {
 }
 
 .navLink {
-	border-radius:10px;
+    text-decoration: none;
+    border: none;
+	border-radius: 10px;
 	color: inherit;
-	text-decoration: none;
+	background-color: transparent;
 	padding: 10px;
 	transition: background-color 0.5s linear;
 }
 
-.navLink:hover{
-	background-color:#CDCDCD;
+.navLink:hover {
+	background-color: #005080;
 }
 
 .navRule {
 	margin: 20px 0px 10px;
+}
+
+#main {
+	text-align:center;
+}
+
+footer {
+	position: absolute;
+	text-align: center;
+	font-size: 75%;
+	left: 20%;
+	bottom: 0;
+	right: 20%;
 }
