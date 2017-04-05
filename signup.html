@@ -3,19 +3,41 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Slammers Beach Volleyball</title>
-		<link href="splashstyle.css" rel="stylesheet" type="text/css">
-		<script src="splashscript.js"></script>
+		<link href="signupstyle.css" rel="stylesheet" type="text/css">
+		<script src="signupscript.js"></script>
 	</head>
 
 	<body>
-		<div id="splashContent">
-			<div id="splashText">
-				Gotta make this a sign up page mang
+		<div id="signupContent">
+			<div id="signupText">
+				Sign up for Slammers Beach Volleyball today!
 			</div>
-			<div id="buttonContainer">
-				<button id="enterSite" class="button" onclick="enterSite()">Enter Site</button>
-				<button id="callToAction" class="button" onclick="signUp()">Sign up now!</button>
-			</div>
+			
+			<form id="signupForm">
+				<label class="signupLabel">Name:</label>
+				<input type="text" class="signupTextBox">
+				<label class="signupLabel">Phone:</label>
+				<input type="text" class="signupTextBox">
+				<label class="signupLabel">Email:</label>
+				<input type="text" class="signupTextBox">
+				<label class="signupLabel">Competition Day:</label>
+				<select class="signupSelect">
+					<option value="mon">Monday</option>
+					<option value="tue">Tuesday</option>
+					<option value="wed">Wednesday</option>
+					<option value="thu">Thursday</option>
+					<option value="fri">Friday</option>
+					<option value="sat">Saturday</option>
+				</select>
+				<label class="signupLabel">Competition Time:</label>
+				<select class="signupSelect">
+					<option value="aft">Afternoon</option>
+					<option value="eve">Evening</option>
+				</select>
+				<input type="checkbox">
+				<label>I have read and agree with the <a href="guidelines.html">playing guidelines</a> set out by Slammers Beach Volleyball.</label>
+				<input type="submit">
+			</form>
 		</div>
 		<div id="imageContainer">
 			<img class="imageBottom" src="images/slammersPortal.png">
