@@ -17,6 +17,44 @@
 				<button id="callToAction" class="button" onclick="signUp()">Sign up now!</button>
 			</div>
 		</div>
+		<div id="signupContent">
+			<div id="signupText">
+				Sign up for Slammers today!
+			</div>
+			<form id="signupForm" action="home.html">
+				<label class="signupLabel">Name:</label>
+				<input type="text" class="signupTextBox">
+				<br>
+				<label class="signupLabel">Phone:</label>
+				<input type="text" class="signupTextBox">
+				<br>
+				<label class="signupLabel">Email:</label>
+				<input type="text" class="signupTextBox">
+				<br>
+				<label class="signupLabel">Competition Day:</label>
+				<select class="signupSelect">
+					<option value="mon">Monday</option>
+					<option value="tue">Tuesday</option>
+					<option value="wed">Wednesday</option>
+					<option value="thu">Thursday</option>
+					<option value="fri">Friday</option>
+					<option value="sat">Saturday</option>
+				</select>
+				<br>
+				<label class="signupLabel">Competition Time:</label>
+				<select class="signupSelect">
+					<option value="aft">Afternoon</option>
+					<option value="eve">Evening</option>
+				</select>
+				<br>
+				<label class="signupLabel signupCheckLabel">
+					<input type="checkbox" class="signupCheck">
+					I have read and agree with the <a href="guidelines.html">playing guidelines</a> set out by Slammers Beach Volleyball.
+				</label>
+				<br>
+				<input type="submit" onclick="signUpSubmit()">
+			</form>
+		</div>
 		<div id="imageContainer">
 			<img class="imageBottom" src="images/slammersPortal.png">
 		</div>
