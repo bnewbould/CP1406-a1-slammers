@@ -5,6 +5,7 @@
 		<title>Slammers Beach Volleyball</title>
 		<link href="splashstyle.css" rel="stylesheet" type="text/css">
 		<script src="splashscript.js"></script>
+		<script src="signupValidation.js"></script>
 	</head>
 
 	<body>
@@ -21,15 +22,15 @@
 			<div id="signupText">
 				Sign up for Slammers today!
 			</div>
-			<form id="signupForm" action="home.html">
+			<form id="signupForm" onsubmit="return validateForm(this)">
 				<label class="signupLabel">Name:</label>
-				<input type="text" class="signupTextBox">
+				<input type="text" class="signupTextBox" id="signupName">
 				<br>
 				<label class="signupLabel">Phone:</label>
-				<input type="text" class="signupTextBox">
+				<input type="text" class="signupTextBox" id="signupPhone">
 				<br>
 				<label class="signupLabel">Email:</label>
-				<input type="text" class="signupTextBox">
+				<input type="text" class="signupTextBox" id="signupEmail">
 				<br>
 				<label class="signupLabel">Competition Day:</label>
 				<select class="signupSelect">
@@ -48,11 +49,11 @@
 				</select>
 				<br>
 				<label class="signupLabel signupCheckLabel">
-					<input type="checkbox" class="signupCheck">
+					<input type="checkbox" class="signupCheck"  id="signupBox">
 					I have read and agree with the <a href="guidelines.html">playing guidelines</a> set out by Slammers Beach Volleyball.
 				</label>
 				<br>
-				<input type="submit" onclick="signUpSubmit()">
+				<input type="submit" class="signupSubmit" value="Sign up!">
 			</form>
 		</div>
 		<div id="imageContainer">

@@ -15,8 +15,8 @@ html {
 body {
 	height: 100%;
 	background-color: #edc9af;
-	background: url("images/scrollingBackground.png");
-    background-repeat: no-repeat;
+	background: url("images/scrollingBackground.jpg");
+    background-repeat: repeat-x;
     background-attachment: fixed;
 	margin: 0px 20%;
 	padding: 0px 50px;
@@ -61,20 +61,47 @@ nav {
 }
 
 #main {
-	position:relative;
 	flex: 1;
 	text-align: center;
 	padding: 0px 80px;
 }
 
+@keyframes fade {
+	0% {
+		opacity:0;
+		visibility: hidden;
+	}
+	100% {
+		opacity:1;
+		visibility: visible;
+	}
+}
+
+.fadeIn {
+	animation: 1s ease-out 1s 1 fade;
+	animation-fill-mode: forwards;
+}
+
+.fadeOut {
+	animation: 1s ease-out 0s 1 fade;
+	animation-direction: reverse;
+	animation-fill-mode: forwards;
+}
+
 #callToAction {
 	position: absolute;
-	padding: 40px 5px;
+	height: 171px;
 	text-shadow: -1px 0 #000000,0 1px #000000, 1px 0 #000000,0 -1px #000000;
-	right: 0;
+	left: 80%;
 	background-color:#005080;
+	border: thin #FFFFFF solid;
 	border-radius:20px;
-	transform: translate(50%, 0%);
+	width: 15%;
+	transition: height 1s;
+}
+
+#callContent {
+	margin: 50px 0px -110px 0px;
 }
 
 #signUp {
@@ -87,8 +114,95 @@ nav {
 	border-radius: 15px;
 }
 
+#signupContent {
+	display: none;
+	visibility: hidden;
+}
+
+.signupLabel {
+	display: inline-block;
+	color: white;
+	text-shadow: -1px 0 #000000,0 1px #000000, 1px 0 #000000,0 -1px #000000;
+}
+
+.signupTextBox {
+	background-color: #edc9af;
+	border: none;
+	width: auto;
+	margin: 5px 5px 5px 5px;
+	border-radius: 5px;
+}
+
+.signupSelect {
+	background-color: #edc9af;
+	border: none;
+	width: auto;
+	margin: 5px 8px 5px 8px;
+	border-radius: 5px;
+}
+
+.signupCheck {
+	margin: 5px 5px 5px 5px;
+}
+
+.signupSubmit {
+	border: medium #FFF solid;
+	border-radius: 10px;
+	color: #FFF;
+	background-color: transparent;
+	padding:5px 10px 5px;
+}
+
+#announcementContent {
+	display:block;
+	padding: 0px 5px 5px;
+	border: thin white solid;
+	border-radius: 10px;
+	background-color: #005080;
+}
+
+#announcementContent h1 {
+	text-shadow: -1px 0 #000000,0 1px #000000, 1px 0 #000000,0 -1px #000000;
+}
+
+#announcements {
+	list-style: none;
+	padding-left: 0;
+}
+
+.announcement {
+	border-bottom: thin white solid;
+}
+
+#leagueTable {
+	width: 100%;
+	border: thin #FFF solid;
+    border-collapse: collapse;
+}
+
+#leagueTable tr:nth-child(even) {
+	 background-color: #005080;
+}
+
+#leagueTopRow {
+	border-bottom: thin #FFF solid;
+}
+
+#leagueTopRow th {
+	border-right: thin #FFF solid;
+}
+
 footer {
 	font-size: 75%;
 	text-align: center;
 	padding: 10px;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.reference {
+	vertical-align:super;
+	font-size:75%;
 }

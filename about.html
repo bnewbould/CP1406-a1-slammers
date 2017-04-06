@@ -6,6 +6,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 		<link href="mainstyle.css" rel="stylesheet" type="text/css">
 		<script src="mainscript.js"></script>
+		<script src="signupValidation.js"></script>
 	</head>
 	<body>
 		<div id="content">
@@ -22,17 +23,62 @@
 
 			<div id="main">
 				<div id="callToAction">
-					<p>Feeling competitive?</p>
-					<button id="signUp" onClick="goToSignUp()">Sign up today!</button>
+					<div id="callContent">
+						<p>Feeling competitive?</p>
+						<button id="signUp" onClick="signUp()">Sign up today!</button>
+					</div>
+					<div id="signupContent">
+						<form id="signupForm" onsubmit="return validateForm(this)">
+							<label class="signupLabel">Name:</label>
+							<input type="text" class="signupTextBox" id="signupName">
+							<br>
+							<label class="signupLabel">Phone:</label>
+							<input type="text" class="signupTextBox" id="signupPhone">
+							<br>
+							<label class="signupLabel">Email:</label>
+							<input type="text" class="signupTextBox" id="signupEmail">
+							<br>
+							<label class="signupLabel">Competition Day:</label>
+							<select class="signupSelect">
+								<option value="mon">Monday</option>
+								<option value="tue">Tuesday</option>
+								<option value="wed">Wednesday</option>
+								<option value="thu">Thursday</option>
+								<option value="fri">Friday</option>
+								<option value="sat">Saturday</option>
+							</select>
+							<br>
+							<label class="signupLabel">Competition Time:</label>
+							<select class="signupSelect">
+								<option value="aft">Afternoon</option>
+								<option value="eve">Evening</option>
+							</select>
+							<br>
+							<label class="signupLabel signupCheckLabel">
+								<input type="checkbox" class="signupCheck"  id="signupBox">
+								I have read and agree with the <a href="guidelines.html">playing guidelines</a> set out by Slammers Beach Volleyball.
+							</label>
+							<br>
+							<input type="submit" class="signupSubmit" value="Sign up!">
+						</form>
+					</div>
 				</div>
 				<!--main body-->
-				<p>Volleyball is a team sport played by two teams on a playing court divided by a net. </p>
-				<p>The sport originated in the United States, and is now just achieving the type of popularity in the U.S. that it has received on a global basis, where it ranks behind only soccer among participation sports. </p>
-				<p>There are 800 million players worldwide who play Volleyball at least once a week. </p>
-				<p>The object of the game is for each team to send the ball regularly over the net to ground it on the opponent's court, and to prevent the ball from being grounded on its own court. The ball is put into play by the right back-row player who serves the ball by hitting it over the net to the opponent's court. A team is allowed to hit the ball three times (in addition to the block contact) to return it to the opponent's court. A player is not allowed to hit the ball twice consecutively, except when attempting a block. The rally continues until the ball touches the ground/floor, goes "out" or a team fails to return it to the opponent's court or commits a fault. </p>
-				<p>The team winning a rally scores a point (Rally Point System). When the receiving team wins a rally, it gains a point and the right to serve, and its players rotate one position clockwise. </p>
-				<p>The best of three or best of five games will win matches. Each non-deciding game will be won by the team that first scores 25 points with a minimum two-point advantage (no scoring cap). If there is a deciding game, it will be won by the team that first scores 15 points with a minimum two-point advantage (no scoring cap). </p>
-
+				<span id="announcementContent">
+					<h1>Announcements</h1>
+					<ul id="announcements">
+						<li class="announcement">During August only, you can purchase 4 drinks for the price of 3 at the bar.</li>
+						<li class="announcement">New teams get a 20% discount on registration for the next season.</li>
+						<li class="announcement">Slammers Tournament: Get your nominations in now for the next 4-a-side weekend competition.</li>
+						<li class="lastAnnouncement">New season starts August 21st.</li>
+					</ul>
+				</span><br>
+				<p>Volleyball is a team sport played by two teams on a playing court divided by a net.</p>
+				<p>The sport originated in the United States, and is now just achieving the type of popularity in the U.S. that it has received on a global basis, where it ranks behind only soccer among participation in sports.</p>
+				<p>There are 800 million players worldwide who play Volleyball at least once a week.</p>
+				<p>The object of the game is for each team to send the ball regularly over the net to ground it on the opponent's court, and to prevent the ball from being grounded on its own court. The ball is put into play by the right back-row player who serves the ball by hitting it over the net to the opponent's court. A team is allowed to hit the ball three times (in addition to the block contact) to return it to the opponent's court. A player is not allowed to hit the ball twice consecutively, except when attempting a block. The rally continues until the ball touches the ground/floor, goes "out" or a team fails to return it to the opponent's court or commits a fault.</p>
+				<p>The team winning a rally scores a point (Rally Point System). When the receiving team wins a rally, it gains a point and the right to serve, and its players rotate one position clockwise.</p>
+				<p>The best of three or best of five games will win matches. Each non-deciding game will be won by the team that first scores 25 points with a minimum two-point advantage (no scoring cap). If there is a deciding game, it will be won by the team that first scores 15 points with a minimum two-point advantage (no scoring cap).</p>
 			</div>
 
 			<footer>
@@ -42,7 +88,11 @@
 				Address: 123 Pokemund Street, Cairnsville, Queensland |
 				Email: slammers@gmail.com
 				<br>
-				<strong>© 2017 Slammers Beach Volleyball</strong>
+				Some images licensed under Creative Commons, CC by 2.0
+				<a class="reference" href="https://www.flickr.com/photos/37873897@N06/5208457834" target="_blank">[1]</a>
+				<a class="reference" href="https://commons.wikimedia.org/wiki/File%3ABeach_Volleyball_Classic_2007_(1444259070).jpg" target="_blank">[2]</a>
+				<br>
+				<span class="strong">© 2017 Slammers Beach Volleyball</span>
 			</footer>
 		</div>
 	</body>

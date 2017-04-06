@@ -6,6 +6,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 		<link href="mainstyle.css" rel="stylesheet" type="text/css">
 		<script src="mainscript.js"></script>
+		<script src="signupValidation.js"></script>
 	</head>
 	<body>
 		<div id="content">
@@ -22,13 +23,60 @@
 
 			<div id="main">
 				<div id="callToAction">
-					<p>Feeling competitive?</p>
-					<button id="signUp" onClick="goToSignUp()">Sign up today!</button>
+					<div id="callContent">
+						<p>Feeling competitive?</p>
+						<button id="signUp" onClick="signUp()">Sign up today!</button>
+					</div>
+					<div id="signupContent">
+						<form id="signupForm" onsubmit="return validateForm(this)">
+							<label class="signupLabel">Name:</label>
+							<input type="text" class="signupTextBox" id="signupName">
+							<br>
+							<label class="signupLabel">Phone:</label>
+							<input type="text" class="signupTextBox" id="signupPhone">
+							<br>
+							<label class="signupLabel">Email:</label>
+							<input type="text" class="signupTextBox" id="signupEmail">
+							<br>
+							<label class="signupLabel">Competition Day:</label>
+							<select class="signupSelect">
+								<option value="mon">Monday</option>
+								<option value="tue">Tuesday</option>
+								<option value="wed">Wednesday</option>
+								<option value="thu">Thursday</option>
+								<option value="fri">Friday</option>
+								<option value="sat">Saturday</option>
+							</select>
+							<br>
+							<label class="signupLabel">Competition Time:</label>
+							<select class="signupSelect">
+								<option value="aft">Afternoon</option>
+								<option value="eve">Evening</option>
+							</select>
+							<br>
+							<label class="signupLabel signupCheckLabel">
+								<input type="checkbox" class="signupCheck"  id="signupBox">
+								I have read and agree with the <a href="guidelines.html">playing guidelines</a> set out by Slammers Beach Volleyball.
+							</label>
+							<br>
+							<input type="submit" class="signupSubmit" value="Sign up!">
+						</form>
+					</div>
 				</div>
 				<!--main body-->
-				<p><a href="http://www.volleyball.org/">http://www.volleyball.org/</a> - Volleyball Worldwide</p>
-				<p><a href="http://www.fivb.org/EN/beachvolleyball/">http://www.fivb.org/EN/beachvolleyball/</a> - FIVB International Federation of Volleyball Beach</p>
-				<p><a href="http://avp.com">avp.com</a> – Association of Volleyball Professionals</p>
+				<span id="announcementContent">
+					<h1>Announcements</h1>
+					<ul id="announcements">
+						<li class="announcement">During August only, you can purchase 4 drinks for the price of 3 at the bar.</li>
+						<li class="announcement">New teams get a 20% discount on registration for the next season.</li>
+						<li class="announcement">Slammers Tournament: Get your nominations in now for the next 4-a-side weekend competition.</li>
+						<li class="lastAnnouncement">New season starts August 21st.</li>
+					</ul>
+				</span><br>
+				<p>Here's an assorted batch of links to various volleyball resources</p><br>
+				<a href="http://www.volleyball.org/">Volleyball worldwide</a><br>
+				<a href="http://www.fivb.org/EN/beachvolleyball/">FIVB International Federation of Volleyball</a><br>
+				<a href="http://www.avp.com/">Association of Volleyball Professionals</a><br>
 
 			</div>
 
@@ -39,7 +87,11 @@
 				Address: 123 Pokemund Street, Cairnsville, Queensland |
 				Email: slammers@gmail.com
 				<br>
-				<strong>© 2017 Slammers Beach Volleyball</strong>
+				Some images licensed under Creative Commons, CC by 2.0
+				<a class="reference" href="https://www.flickr.com/photos/37873897@N06/5208457834" target="_blank">[1]</a>
+				<a class="reference" href="https://commons.wikimedia.org/wiki/File%3ABeach_Volleyball_Classic_2007_(1444259070).jpg" target="_blank">[2]</a>
+				<br>
+				<span class="strong">© 2017 Slammers Beach Volleyball</span>
 			</footer>
 		</div>
 	</body>

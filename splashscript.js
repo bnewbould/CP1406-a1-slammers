@@ -1,13 +1,13 @@
 // JavaScript Document
-function enterSite() {
+"use strict";
+
+function enterSite() { //enter site
 	window.location.assign("home.html");
 }
 
-function signUp() {
-	document.getElementById("signupContent").style.visibility = "visible";
-	document.getElementById("splashContent").style.visibility = "hidden";
-}
-
-function signUpSubmit() {
-	alert("u dun gouf'd");
+function signUp() { //fade splashContent out and signupContent in
+	var splash = document.getElementById("splashContent");
+	var signup = document.getElementById("signupContent");
+	splash.className = "fadeOut";
+	signup.className = "fadeIn";
 }
