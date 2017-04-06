@@ -163,7 +163,7 @@ nav {
 }
 
 #announcementContent h1 {
-	text-shadow: -1px 0 #000000,0 1px #000000, 1px 0 #000000,0 -1px #000000;
+	text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
 }
 
 #announcements {
@@ -194,7 +194,7 @@ nav {
 }
 
 .link  {
-	color:#005080;
+	color: #88A8FC;
 }
 
 footer {
@@ -210,5 +210,4 @@ footer {
 .reference {
 	vertical-align:super;
 	font-size:75%;
-	color:#005080;
 }
